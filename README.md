@@ -1,6 +1,9 @@
 # Front-End Technical Proof
 
-Se requiere maquetar (html y estilos) y desarrollar (javascript) una aplicación para gestionar una lista de cadenas de texto. Puedes encontrar el diseño en el siguiente enlace: https://xd.adobe.com/view/ea696dd0-8781-4460-8720-36deb2d19b2a-bf3a/ 
+Se requiere maquetar (html y estilos) y desarrollar (javascript) una aplicación para gestionar una lista de cadenas de texto. Todo esto usando el framework <b>REACT</b>.
+<br>
+<br>
+Puedes encontrar el diseño en el siguiente enlace: https://xd.adobe.com/view/ea696dd0-8781-4460-8720-36deb2d19b2a-bf3a/ 
 
 ## Especificación Funcional 
 
