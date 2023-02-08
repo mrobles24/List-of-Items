@@ -5,13 +5,14 @@ function Item({id, text, selected, selectItem}){
 
   const [visible, setVisible] = useState(true);
 
+  // Handler for number of clicks
   const handleClick = (e) => {
     switch (e.detail) {
       case 1:
         selectItem(id)
         break;
       case 2:
-        removeElement()
+        removeItem()
         break;
       default:
         break;
@@ -19,7 +20,8 @@ function Item({id, text, selected, selectItem}){
     }
   };
 
-  const removeElement = () => {
+  // Remove an Item's visibility
+  const removeItem = () => {
     setVisible((prev) => !prev);
   }
 

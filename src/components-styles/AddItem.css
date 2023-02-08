@@ -44,6 +44,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.item-input:focus{
+  outline: none;
+}
+
 /* Buttons box */
 .add-items-buttons-container{
   display: flex;
@@ -52,8 +56,8 @@
   margin: 10px;
 }
 
-/* ADD button */
-.item-button{
+/* Generic button */
+.generic-button{
   width: 125px;
   height: 50px;
   margin: 10px;
@@ -67,9 +71,8 @@
   cursor: pointer;
 }
 
-/******** IDENTIFIERS ********/
-
-#add{
+/* ADD button*/
+.generic-button.add{
   color: rgba(255, 255, 255, 1);
   background-color: rgb(50,75,255);
 }

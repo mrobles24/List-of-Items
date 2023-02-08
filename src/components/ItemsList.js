@@ -8,6 +8,7 @@ function ItemsList(){
 
   const [items, setItems]= useState([]);
 
+  // Add item to list if it's got text
   const addItem = item => {
     if(item.text.trim()){
       item.text = item.text.trim();
@@ -16,6 +17,7 @@ function ItemsList(){
     }
   }
 
+  // Select or unselect an item from the list
   const selectItem = id =>{
     const updatedItems = items.map(item => {
       if(item.id === id){
@@ -26,7 +28,8 @@ function ItemsList(){
     setItems(updatedItems);
   }
 
-  const deleteItem = selected =>{
+  // Delete item from list using button
+  const deleteItem = () =>{
     const updatedItems = items.filter(item => item.selected === false);
     setItems(updatedItems);
   }
@@ -47,18 +50,13 @@ function ItemsList(){
       </div>
 
       <div className='items-buttons-container'>
-          <button className='item-button reload'>
-            <div className='item-icon-container'>
-              <BsArrowCounterclockwise className='item-icon' />
-            </div>
-          </button>
-          <button 
-            className='item-button'
-            onClick={deleteItem}
-          >DELETE</button>
-          <button 
-          className='item-button add'
-          >ADD</button>
+        <button className='item-button reload'>
+          <div className='item-icon-container'>
+            <BsArrowCounterclockwise className='item-icon' />
+          </div>
+        </button>
+        <button className='item-button' onClick={deleteItem}>DELETE</button>
+        <button className='item-button add'>ADD</button>
       </div>
 
       <AddItem onSubmit={addItem} />

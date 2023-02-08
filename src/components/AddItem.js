@@ -6,10 +6,12 @@ function AddItem(props) {
 
   const [input, setInput] = useState('');
 
+  // Set input text value
   const manageChange = e => {
     setInput(e.target.value);
   }
 
+  // Create and send a new item to the list
   const manageSend = e => {
     e.preventDefault();
     
@@ -36,12 +38,8 @@ function AddItem(props) {
         />
       </form>
       <div className='add-items-buttons-container'>
-        <button 
-          onClick={manageSend}
-          className='item-button' 
-          id='add'
-          >ADD</button>
-        <button className='item-button'>CANCEL</button>
+        <button onClick={manageSend} className='generic-button add'>ADD</button>
+        <button className='generic-button'>CANCEL</button>
       </div>
     </div>
   )
