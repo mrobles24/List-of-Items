@@ -11,7 +11,7 @@ body{
   color: white;
   background: linear-gradient(135deg,rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
   font-family: Lato, sans-serif;
-  height: 100%;
+  height: max-content;
 }
 
 h1{
