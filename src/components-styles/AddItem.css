@@ -1,0 +1,75 @@
+
+/********** CLASES **********/
+
+/* Main Container */
+.add-items-main{
+  width: 700px;
+  height: 270px;
+  background-color:rgba(255, 255, 255, 1);
+  padding: 30px;
+  margin: 30px;
+  margin-left: 60px;
+  border-radius: 26px;
+  box-shadow: 0 5px 12px  rgba(0, 0, 0, 0.12);
+}
+
+/* Paragraf */
+.modal-paragraf{
+  color: rgb(51,51,51);
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  margin: 10px 0 0 20px;
+}
+
+/* Form */
+.item-form{
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin: 20px;
+}
+
+/* Input */
+.item-input{
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 60px;
+  padding-left: 15px;
+  color: #999999;
+  background-color: #F7F7F7;
+  border: 1px solid #CCCCCC;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Buttons box */
+.add-items-buttons-container{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 10px;
+}
+
+/* ADD button */
+.item-button{
+  width: 125px;
+  height: 50px;
+  margin: 10px;
+  color:  rgb(50,75,255);
+  border-color: rgb(50,75,255);
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  border-width: 1.5px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/******** IDENTIFIERS ********/
+
+#add{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(50,75,255);
+}

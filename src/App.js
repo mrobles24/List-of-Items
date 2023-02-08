@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import grupoVeciLogo from './images/GRUPOVECI.png';
+import ItemsList from './components/ItemsList';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className='aplication-main'>
+      <div className='veci-logo-container'>
+        <img 
+          src={grupoVeciLogo}
+          className='veci-logo' 
+          alt='logo de veci'
+        />
+      </div>
+      <div className='items-list-main'>
+        <h1>List of items</h1>
+        <p>This is a list of items, they can be added or deleted when selected.
+          This is a technical proof task conducted by Front-end department of VECI Group Tech .
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='items-list-box'>
+          <ItemsList/>        
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,49 @@
+/* Lista de items */
+.items-list-container{
+    width: 800px;
+    min-height: 85px;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(247, 247, 247, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-style :solid;
+    border-color: rgba(204, 204, 204, 1);
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+/* Contenedor de botones */
+.items-buttons-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+}
+  
+/* Boton generico */
+.item-button{
+    width: 125px;
+    height: 50px;
+    margin: 10px;
+    color:  rgb(50,75,255);
+    border-color: rgb(50,75,255);
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 15px;
+    border-width: 1.5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+  
+.item-button.add{
+    color: white;
+    background-color: rgb(50,75,255);
+    margin-left: 480px;
+}
+  
+.item-button.reload{
+    width: 75px;
+}
