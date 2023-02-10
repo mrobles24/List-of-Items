@@ -3,9 +3,9 @@
 /********** CLASES **********/
 
 /* List of Items */
-.items-list-container{
+.items-list-container {
   width: 800px;
-  min-height: 85px;
+  min-height: 65px;
   margin: 20px;
   padding: 10px;
   background-color: rgba(247, 247, 247, 1);
@@ -13,14 +13,14 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-style :solid;
+  border-style: solid;
   border-color: rgba(204, 204, 204, 1);
   border-width: 1px;
   border-radius: 5px;
 }
 
 /* Button container */
-.items-buttons-container{
+.items-buttons-container {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -28,11 +28,11 @@
 }
 
 /* Modified generic button */
-.generic-button.reload{
+.generic-button.reload {
   width: 75px;
 }
 
 /* Modified generic add button */
-.generic-button.add.item{
+.generic-button.add.item {
   margin-left: 480px;
 }

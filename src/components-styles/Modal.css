@@ -1,33 +1,33 @@
 @import "../GlobalStyle.css";
 
-
 /********** CLASES **********/
 
-.modal-background {
-  width: 840px;
-  height: 300px;
-  background-color: rgba(200, 200, 200);
-  /*opacity: 0.5;*/
+/* Modal main container*/
+.modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
 }
 
 /* Main Container */
-.add-items-main{
+.add-items-main {
   width: 700px;
   height: 270px;
-  background-color:var(--backgroundColor);
+  background-color: var(--backgroundColor);
   padding: 30px;
-  margin: 30px;
-  margin-left: 40px;
+  margin: 50px;
   border-radius: 26px;
-  box-shadow: 0 5px 12px  rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Paragraf */
-.modal-paragraf{
+.modal-paragraf {
   color: var(--textColor);
   font-size: 18px;
   font-family: var(--font);
@@ -36,7 +36,7 @@
 }
 
 /* Form */
-.item-form{
+.item-form {
   display: flex;
   justify-content: center;
   width: 600px;
@@ -44,29 +44,27 @@
 }
 
 /* Input */
-.item-input{
+.item-input {
   display: flex;
   justify-content: center;
   width: 600px;
   height: 60px;
   padding-left: 15px;
   color: #999999;
-  background-color: #F7F7F7;
-  border: 1px solid #CCCCCC;
+  background-color: #f7f7f7;
+  border: 1px solid #cccccc;
   font-size: 18px;
   font-family: var(--font);
 }
 
-.item-input:focus{
+.item-input:focus {
   outline: none;
 }
 
 /* Buttons container */
-.add-items-buttons-container{
+.add-items-buttons-container {
   display: flex;
   justify-content: right;
   align-items: center;
   margin: 10px;
 }
-
-

@@ -1,31 +1,32 @@
 /* GLOBAL VARIABLES */
 
-:root{
-  --textColor:  rgb(51,51,51);
-  --highlightColor: rgb(50,75,255);
-  --backgroundColor:  rgba(255, 255, 255, 1);
-  --font: 'Montserrat', sans-serif;
+:root {
+  --textColor: rgb(51, 51, 51);
+  --highlightColor: rgb(50, 75, 255);
+  --backgroundColor: rgba(255, 255, 255, 1);
+  --font: "Montserrat", sans-serif;
 }
 
 /* GLOBAL CLASSES */
 
 /* Generic button */
-.generic-button{
+.generic-button {
   width: 125px;
   height: 50px;
   margin: 10px;
-  color:  var(--highlightColor);
+  color: var(--highlightColor);
   border-color: var(--highlightColor);
   background-color: var(--backgroundColor);
   font-family: var(--font);
   font-size: 15px;
+  font-weight: bold;
   border-width: 1.5px;
   border-radius: 30px;
   cursor: pointer;
 }
 
 /* ADD button*/
-.generic-button.add{
+.generic-button.add {
   color: var(--backgroundColor);
   background-color: var(--highlightColor);
 }

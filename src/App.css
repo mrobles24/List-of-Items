@@ -1,21 +1,24 @@
 @import "GlobalStyle.css";
 
-
 /********** ELEMENTS **********/
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html,
-body{
-  background: linear-gradient(135deg,rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
-  height: max-content;
+body {
+  background: linear-gradient(
+    135deg,
+    rgba(161, 196, 253, 1),
+    rgba(194, 233, 251, 1)
+  );
+  min-height: 100%;
 }
 
-h1{
+h1 {
   color: var(--textColor);
   font-size: 40px;
   font-family: var(--font);
@@ -23,7 +26,7 @@ h1{
   margin: 10px 0;
 }
 
-p{
+p {
   color: var(--textColor);
   font-size: 18px;
   font-family: var(--font);
@@ -31,11 +34,10 @@ p{
   margin: 10px 0;
 }
 
-
 /********** CLASES **********/
 
 /* Main Screen */
-.aplication-main{
+.application-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,33 +45,33 @@ p{
 }
 
 /* VECI logo */
-.veci-logo-container{
+.veci-logo-container {
   width: 100%;
   margin: 20px;
   margin-left: 40px;
   display: flex;
   align-items: left;
-  justify-content: left;  
+  justify-content: left;
 }
 
-.veci-logo{
+.veci-logo {
   width: 300px;
   height: 75px;
 }
 
 /* Main list of items container */
-.items-list-main{
+.items-list-main {
   width: 900px;
-  min-height: 500px;
+  min-height: 300px;
   background-color: var(--backgroundColor);
   padding: 30px;
-  margin: 30px;
+  margin: 100px;
   border-radius: 26px;
-  box-shadow: 0 5px 12px  rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Icon */
-.item-icon{
+.item-icon {
   width: 25px;
   height: 25px;
   margin: 5px;
