@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import '../components-styles/Item.css';
 
-function Item({id, text, selected, selectItem}){
+function Item({id = '-1', text = ' ', selected = false, selectItem}){
 
   const [visible, setVisible] = useState(true);
 
   // Handler for number of clicks
-  const handleClick = (e) => {
-    switch (e.detail) {
+  const handleClick = (event) => {
+    switch (event.detail) {
       case 1:
         selectItem(id)
         break;

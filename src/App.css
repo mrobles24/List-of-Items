@@ -1,3 +1,6 @@
+@import "GlobalStyle.css";
+
+
 /********** ELEMENTS **********/
 
 *{
@@ -8,24 +11,22 @@
 
 html,
 body{
-  color: white;
   background: linear-gradient(135deg,rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
-  font-family: Lato, sans-serif;
   height: max-content;
 }
 
 h1{
-  color: rgb(51,51,51);
+  color: var(--textColor);
   font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font);
   text-align: center;
   margin: 10px 0;
 }
 
 p{
-  color: rgb(51,51,51);
+  color: var(--textColor);
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font);
   text-align: center;
   margin: 10px 0;
 }
@@ -41,7 +42,7 @@ p{
   align-items: center;
 }
 
-/* Logo de VECI */
+/* VECI logo */
 .veci-logo-container{
   width: 100%;
   margin: 20px;
@@ -56,18 +57,18 @@ p{
   height: 75px;
 }
 
-/* Container de items */
+/* Main list of items container */
 .items-list-main{
   width: 900px;
   min-height: 500px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--backgroundColor);
   padding: 30px;
   margin: 30px;
   border-radius: 26px;
   box-shadow: 0 5px 12px  rgba(0, 0, 0, 0.12);
 }
 
-/* Icono */
+/* Icon */
 .item-icon{
   width: 25px;
   height: 25px;

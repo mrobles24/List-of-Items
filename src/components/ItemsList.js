@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import '../components-styles/ItemsList.css';
 import Item from './Item';
-import AddItem from './AddItem';
+import Modal from './Modal';
 import {BsArrowCounterclockwise} from "react-icons/bs";
 
 function ItemsList(){
 
   const [items, setItems]= useState([]);
+  const [openModal,setOpenModal] = useState(false);
 
   // Add item to list if it's got text
   const addItem = item => {
@@ -36,6 +37,8 @@ function ItemsList(){
 
   return(
     <>
+      {openModal && <Modal onSubmit={addItem} closeModal={setOpenModal} />}
+      
       <div className='items-list-container'>
         {
           items.map((item)=>
@@ -48,18 +51,15 @@ function ItemsList(){
           )
         }
       </div>
-
       <div className='items-buttons-container'>
-        <button className='item-button reload'>
+        <button className='generic-button reload'>
           <div className='item-icon-container'>
             <BsArrowCounterclockwise className='item-icon' />
           </div>
         </button>
-        <button className='item-button' onClick={deleteItem}>DELETE</button>
-        <button className='item-button add'>ADD</button>
+        <button className='generic-button' onClick={deleteItem}>DELETE</button>
+        <button className='generic-button add item' onClick={() => setOpenModal(true)}>ADD</button>
       </div>
-
-      <AddItem onSubmit={addItem} />
     </>
   );
 }
