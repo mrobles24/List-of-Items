@@ -6,9 +6,6 @@ import { BsArrowCounterclockwise } from "react-icons/bs";
 
 function ItemsList({ action, isVisible, setVisibility }) {
   const [items, setItems] = useState([]);
-  //const [openModal,setOpenModal] = useState(false);
-
-  console.log("", action);
 
   // Add item to list if it's got text
   const addItem = (item) => {

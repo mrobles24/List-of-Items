@@ -1,14 +1,13 @@
 @import "../GlobalStyle.css";
 
-
 /********** CLASES **********/
 
 /* Non-selected item container */
-.item-container{
+.item-container {
   width: 780px;
   min-height: 40px;
   color: var(--textColor);
-  background-color:rgba(247, 247, 247,1);
+  background-color: rgba(247, 247, 247, 1);
   padding: 8px 15px 8px 20px;
   display: flex;
   justify-content: center;
@@ -19,13 +18,13 @@
 }
 
 /* Selected item container */
-.item-container.selected{
+.item-container.selected {
   color: var(--backgroundColor);
   background-color: var(--highlightColor);
 }
 
 /* Text of item */
-.item-text{
+.item-text {
   width: 100%;
   height: 100%;
   font-size: 20px;
