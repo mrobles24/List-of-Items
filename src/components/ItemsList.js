@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../components-styles/ItemsList.css";
 import Item from "./Item";
 import Modal from "./Modal";
@@ -6,6 +6,7 @@ import { BsArrowCounterclockwise } from "react-icons/bs";
 
 function ItemsList({ action, isVisible, setVisibility }) {
   const [items, setItems] = useState([]);
+  const previousValue = useRef(items);
 
   // Add item to list if it's got text
   const addItem = (item) => {
@@ -14,6 +15,7 @@ function ItemsList({ action, isVisible, setVisibility }) {
       const nextItems = [...items, item];
       setItems(nextItems);
     }
+    previousValue.current = items;
   };
 
   // Select or unselect an item from the list
@@ -31,6 +33,12 @@ function ItemsList({ action, isVisible, setVisibility }) {
   const deleteItem = () => {
     const nextItems = items.filter((item) => item.selected === false);
     setItems(nextItems);
+    previousValue.current = items;
+  };
+
+  // Restore latest state
+  const restoreItems = () => {
+    setItems(previousValue.current);
   };
 
   return (
@@ -51,7 +59,7 @@ function ItemsList({ action, isVisible, setVisibility }) {
         ))}
       </div>
       <div className="items-buttons-container">
-        <button className="generic-button reload">
+        <button className="generic-button reload" onClick={restoreItems}>
           <div className="item-icon-container">
             <BsArrowCounterclockwise className="item-icon" />
           </div>
