@@ -11,26 +11,26 @@ function ItemsList({ action, isVisible, setVisibility }) {
   const addItem = (item) => {
     if (item.text.trim()) {
       item.text = item.text.trim();
-      const updatedItems = [...items, item];
-      setItems(updatedItems);
+      const nextItems = [...items, item];
+      setItems(nextItems);
     }
   };
 
   // Select or unselect an item from the list
   const selectItem = (id) => {
-    const updatedItems = items.map((item) => {
+    const nextItems = items.map((item) => {
       if (item.id === id) {
         item.selected = !item.selected;
       }
       return item;
     });
-    setItems(updatedItems);
+    setItems(nextItems);
   };
 
   // Delete item from list using button
   const deleteItem = () => {
-    const updatedItems = items.filter((item) => item.selected === false);
-    setItems(updatedItems);
+    const nextItems = items.filter((item) => item.selected === false);
+    setItems(nextItems);
   };
 
   return (
